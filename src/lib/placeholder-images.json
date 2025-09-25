@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "case-study-1",
+      "description": "A successful defense against a major phishing campaign.",
+      "imageUrl": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjeWJlciUyMHNlY3VyaXR5fGVufDB8fHx8MTc1ODcwOTQ2MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cyber security"
+    },
+    {
+      "id": "case-study-2",
+      "description": "Securing a financial institution's cloud infrastructure.",
+      "imageUrl": "https://images.unsplash.com/photo-1679091131773-50f3cd76d7c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjbG91ZCUyMG5ldHdvcmt8ZW58MHx8fHwxNzU4NzI5NDYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cloud network"
+    },
+    {
+      "id": "case-study-3",
+      "description": "Rapid incident response for a healthcare provider.",
+      "imageUrl": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkYXRhJTIwYnJlYWNofGVufDB8fHx8MTc1ODc5NDU2OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data breach"
+    },
+    {
+      "id": "resource-1",
+      "description": "The 2024 Threat Landscape Report.",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkYXRhJTIwYW5hbHlzaXN8ZW58MHx8fHwxNzU4NjgzMDk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data analysis"
+    },
+    {
+      "id": "resource-2",
+      "description": "A guide to Zero Trust architecture.",
+      "imageUrl": "https://images.unsplash.com/photo-1675044794037-9262cedb6d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxuZXR3b3JrJTIwZGlhZ3JhbXxlbnwwfHx8fDE3NTg3MTM2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "network diagram"
+    },
+    {
+      "id": "resource-3",
+      "description": "AI's role in modern cybersecurity.",
+      "imageUrl": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDB8fHx8MTc1ODc5NDU3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artificial intelligence"
+    },
+    {
+      "id": "hero-image",
+      "description": "Abstract cybersecurity concept image.",
+      "imageUrl": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkaWdpdGFsJTIwc2VjdXJpdHl8ZW58MHx8fHwxNzU4NzQ2MzE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital security"
+    }
+  ]
 }
