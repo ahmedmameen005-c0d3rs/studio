@@ -17,23 +17,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Loader2, Zap } from "lucide-react";
-import { generateThreatSummary } from "@/ai/flows/generate-threat-summary";
+import { getThreatSummary } from "./actions";
 
 const formSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email address." }),
   domain: z.string().min(3, { message: "Domain must be at least 3 characters." }).regex(/^[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/, { message: "Please enter a valid domain." }),
 });
-
-async function getThreatSummary(data: { email: string; domain: string }) {
-    "use server";
-    try {
-        const result = await generateThreatSummary(data);
-        return { success: true, data: result };
-    } catch(error: any) {
-        console.error("Error generating threat summary:", error);
-        return { success: false, error: error.message || "An unknown error occurred." };
-    }
-}
 
 export default function ThreatAnalysisPage() {
   const { toast } = useToast();
@@ -52,7 +41,7 @@ export default function ThreatAnalysisPage() {
     setSummary(null);
     startTransition(async () => {
       const result = await getThreatSummary(values);
-      if (result.success) {
+      if (result.success && result.data) {
         setSummary(result.data.threatSummary);
         toast({
           title: "Analysis Complete",

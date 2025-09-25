@@ -17,17 +17,16 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { generateThreatSummary } from "@/ai/flows/generate-threat-summary";
+import { getThreatSummary } from "../threat-analysis/actions";
 
 // We will use the existing genAI action for this.
 // In a real app, this would be a separate action to save to Firestore.
 const submitContactForm = async (data: { name: string; email: string; message: string }) => {
-    "use server";
     // This is a placeholder. A real implementation would save to Firestore.
     // For this demo, we'll call the AI flow to show server action functionality.
     console.log("Contact Form Submitted:", data);
     try {
-        await generateThreatSummary({email: data.email, domain: data.email.split('@')[1] || 'domain.com'});
+        await getThreatSummary({email: data.email, domain: data.email.split('@')[1] || 'domain.com'});
         return { success: true, message: "We've received your message and will be in touch shortly." };
     } catch(error) {
         console.error("Error submitting contact form", error);
